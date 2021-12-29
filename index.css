@@ -3,11 +3,24 @@
     margin: 0;
     box-sizing: border-box;
     --main-color:rgb(247, 238, 230);
-    --black-color:rgb(245, 46, 47);
+    --orange-color:rgb(245, 46, 47);
+    --black-color:rgb(128, 128, 128);
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
-    color: var(--black-color);
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    color: var(--orange-color);
     margin-bottom: 200px;
 }
 
@@ -25,11 +38,15 @@ a{
     color: var(--main-color);
 }
 
+a:hover{
+    color: black;
+}
+
 .navbar{
     padding: 5px 20px 5px 20px;
     margin: auto;
     width: 100%;
-    background-color: var(--black-color);
+    background-color: var(--orange-color);
     color:var(--main-color) !important;
     z-index: 2;
     font-size: 20px;
@@ -87,7 +104,7 @@ a{
 .form input[type='submit']{
     width: 18%;
     padding: 10px;
-    background-color: var(--black-color);
+    background-color: var(--orange-color);
     color: white;
     cursor: pointer;
 }
