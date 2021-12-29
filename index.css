@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --main-color:rgb(247, 238, 230);
+    --black-color:rgb(245, 46, 47);
+}
+
+body{
+    color: var(--black-color);
+    margin-bottom: 200px;
+}
+
+.header{
+    min-height: 85vh;
+    background-image: url("./bgimage2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.navbar{
+    padding: 5px 20px 5px 20px;
+    margin: auto;
+    width: 100%;
+    background-color: var(--black-color);
+    color:var(--main-color) !important;
+    z-index: 2;
+    font-size: 20px;
+    position: fixed;
+}
+
+.container{
+    min-height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navItems{
+    width: 40%;
+    display: flex;
+    justify-content:space-between;
+    list-style: none;
+}
+
+.headline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 500px;
+}
+
+.container2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.extra{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form{
+    flex-direction: row;
+    margin-top: 30px;
+    max-width: 1000px;
+    width: 90%;
+    
+}
+
+.form input[type='text']{
+    width: 80%;
+    padding: 10px;
+}
+
+.form input[type='submit']{
+    width: 18%;
+    padding: 10px;
+    background-color: var(--black-color);
+    color: white;
+    cursor: pointer;
+}
+
+.todoList{
+    max-width: 1000px;
+    width: 90%;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+.todoList li{
+    border: solid 2px grey;
+    padding: 10px;
+    background: #444;
+    text-transform: capitalize;
+    margin: 5px 0px 5px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo-btn{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.done-tick{
+    width: 20px;
+    height: 20px;
+}
+
+.remove-tick{
+    width: 20px;
+    height: 20px;
+}
